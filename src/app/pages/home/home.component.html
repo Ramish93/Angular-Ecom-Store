@@ -3,7 +3,7 @@
   class="min-h-full max-w-7xl mx-auto border-x"
 >
   <mat-drawer mode="side" opened class="p-6">
-    <div>filters</div>
+    <app-filters (showCategory)="onShowCategory($event)"></app-filters>
   </mat-drawer>
   <mat-drawer-content class="p-6">
     <app-products-header
