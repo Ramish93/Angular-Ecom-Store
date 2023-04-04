@@ -23,7 +23,7 @@ export class CartService {
     }
 
     this.cart.next({ items });
-    this._snackBar.open("1 Item added to cart.", "Ok", { duration: 3000 });
+    this._snackBar.open("1 Item added to cart.", "Ok", { duration: 2000 });
   }
 
   getTotal(items: Array<CartItem>): number {
@@ -34,6 +34,6 @@ export class CartService {
 
   clearCart(): void {
     this.cart.next({ items: [] });
-    this._snackBar.open("Cart is cleared.", "Ok", { duration: 2000 });
+    this._snackBar.open("Cart is cleared.", "Ok", { duration: 3000 });
   }
 }
